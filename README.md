@@ -46,22 +46,35 @@ Below is a conceptual view of the framework architecture, showing how users inte
 
 ```mermaid
 flowchart LR
-    A[Users & Devices<br>(Employees, Vendors)] --> B[Policy Engine<br>Microsoft Entra Conditional Access]
-    B --> C[Policy Administrator<br>Microsoft 365 Security Center]
-    C --> D[Policy Enforcement Points<br>Endpoints, Apps, Gateways]
-    D --> E[Protected Resources<br>Financial Data, Cloud Apps]
+    A["Users & Devices (Employees, Vendors)"] --> B["Policy Engine (Microsoft Entra Conditional Access)"]
+    B --> C["Policy Administrator (Microsoft 365 Security Center)"]
+    C --> D["Policy Enforcement Points (Endpoints, Apps, Gateways)"]
+    D --> E["Protected Resources (Financial Data, Cloud Apps)"]
+
+    style A fill:#1f77b4,stroke:#fff,color:#fff
+    style B fill:#ff7f0e,stroke:#fff,color:#fff
+    style C fill:#2ca02c,stroke:#fff,color:#fff
+    style D fill:#9467bd,stroke:#fff,color:#fff
+    style E fill:#d62728,stroke:#fff,color:#fff
+
 ```
 
----
+
+
 
 ## Implementation Roadmap
 A **phased approach** ensures minimal disruption while achieving quick wins.
 
 ```mermaid
 graph LR
-    A[Phase 1:<br>Assessment & Planning] --> B[Phase 2:<br>Pilot]
-    B --> C[Phase 3:<br>Organization-Wide Rollout]
-    C --> D[Phase 4:<br>Optimization]
+    A["Phase 1: Assessment & Planning"] --> B["Phase 2: Pilot"]
+    B --> C["Phase 3: Organization-Wide Rollout"]
+    C --> D["Phase 4: Optimization"]
+
+    style A fill:#1f77b4,stroke:#fff,color:#fff
+    style B fill:#ff7f0e,stroke:#fff,color:#fff
+    style C fill:#2ca02c,stroke:#fff,color:#fff
+    style D fill:#d62728,stroke:#fff,color:#fff
 ```
 
 ### **Phase 1: Assessment & Planning**
